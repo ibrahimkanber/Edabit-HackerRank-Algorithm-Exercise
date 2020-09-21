@@ -2,22 +2,22 @@
 ////How Much is True?
 //// Create a function which returns the number of true values there are in an array.
 //Answer1
-function countTrue(arr) {
-    let count=0;
-    arr.forEach((item)=>{
-        item===true? count++:count;
-    })
-    return (count)
-}
-countTrue([true,false,false])
+// function countTrue(arr) {
+//     let count=0;
+//     arr.forEach((item)=>{
+//         item===true? count++:count;
+//     })
+//     return (count)
+// }
+// countTrue([true,false,false])
 
-//Answer2
-function countTrue(arr) {
-    return arr.filter(item=>item===true).length
+// //Answer2
+// function countTrue(arr) {
+//     return arr.filter(item=>item===true).length
      
- }
-countTrue([true,false,false])
-*/
+//  }
+// countTrue([true,false,false])
+// */
 
 
 ///--------------------------///
@@ -58,11 +58,11 @@ function redundant(str) {
 
 // Given a and b, determine their respective comparison points.
 
-//Answer:
+//Answer1:
 function compareTriplets(a, b) {
     let alice=0;
     let bob=0;
-    for (let i=0;i<a.length;i++){
+    for (let i=0;i<3;i++){
         if (a[i]>b[i]){
             alice++
         }else if(a[i]<b[i]){
@@ -73,11 +73,74 @@ function compareTriplets(a, b) {
     
     }
 
-    console.log(alice,bob)
+    return(alice,bob)
     
 }
 
+//Answer2
 */
+
+// function compareTriplets(a, b) {
+//     let alice=0;
+//     let bob=0;
+//     for (let i=0;i<3;i++){
+//      a[i]>b[i]? alice++: a[i]<b[i]? bob++: bob===bob
+    
+//     }
+
+//     return(alice,bob)
+    
+// }
+
+
+///Q:5
+
+//Given a square matrix, calculate the absolute difference between the sums of its diagonals.
+
+
+// let i=0;
+// let fibo=(endNumber)=>{
+//     while (i<endNumber){
+//         arr.push((arr[arr.length-1])+(arr[arr.length-2]));
+//         i=arr[arr.length-1]
+//     }
+//     arr.pop()
+//     return console.log(arr)
+// }
+
+// fibo(120)
+var arr=[0,1];
+let fibo=(selectedIndex)=>{
+    for(i=0;i<=(selectedIndex);i++){
+        arr.push((arr[arr.length-1])+(arr[arr.length-2]));
+    }
+    return console.log(arr[selectedIndex+1])
+    
+}
+
+fibo(12)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
